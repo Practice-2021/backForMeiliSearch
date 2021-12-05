@@ -1,0 +1,12 @@
+# Зпросы на получение работника
+type Query {
+
+    # Получение списка всех работников
+    getEmployees:[Employee]
+
+    # Получение работника по ID
+    getEmployeeById(id: ID):Employee
+
+    # Получение работника по произвольному критерию
+    getEmployeeByCriteria(criteria: String, value: String):Employee
+}

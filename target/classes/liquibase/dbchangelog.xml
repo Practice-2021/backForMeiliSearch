@@ -1,0 +1,99 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd
+	http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="1" author="akolomiets">
+        <ext:createCollection collectionName="employee">
+            <ext:options>
+                {
+                    validator: {
+                        $jsonSchema: {
+                            bsonType: "object",
+                            properties: {
+                                id: {
+                                    bsonType: "string",
+                                },
+                                firstName: {
+                                    bsonType: "string",
+                                },
+                                lastName: {
+                                    bsonType: "string",
+                                },
+                                middleName: {
+                                    bsonType: "string",
+                                },
+                                photo: {
+                                    bsonType: "string",
+                                },
+                                positions: {
+                                    bsonType: "array",
+                                },
+                                academicDegree: {
+                                    bsonType: "string",
+                                },
+                                department: {
+                                    bsonType: "string",
+                                },
+                                email: {
+                                    bsonType: "string",
+                                },
+                                pureLink: {
+                                    bsonType: "string",
+                                },
+                                timetable: {
+                                    bsonType: "string",
+                                },
+                                subjects: {
+                                    bsonType: "array",
+                                },
+                                educationLevel: {
+                                    bsonType: "string",
+                                },
+                                qualification: {
+                                    bsonType: "string",
+                                },
+                                speciality: {
+                                    bsonType: "string",
+                                },
+                                retraining: {
+                                    bsonType: "array",
+                                },
+                                experience: {
+                                    bsonType: "int",
+                                },
+                                professionalExperience: {
+                                    bsonType: "int",
+                                },
+                                projects: {
+                                    bsonType: "array",
+                                },
+                                publications: {
+                                    bsonType: "array",
+                                },
+                                grants: {
+                                    bsonType: "array",
+                                },
+                                biography: {
+                                bsonType: "string",
+                                },
+                                requests: {
+                                bsonType: "array",
+                                },
+                                departmentLink: {
+                                bsonType: "string",
+                                }
+                        }
+                    },
+                    validationAction: "warn",
+                    validationLevel: "strict"
+                }
+            </ext:options>
+        </ext:createCollection>
+    </changeSet>
+
+</databaseChangeLog>

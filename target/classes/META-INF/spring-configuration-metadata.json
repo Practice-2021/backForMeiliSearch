@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "mail",
+      "type": "edu.citik.configuration.EmailProperties",
+      "sourceType": "edu.citik.configuration.EmailProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "mail.admin-address",
+      "type": "java.lang.String",
+      "sourceType": "edu.citik.configuration.EmailProperties"
+    },
+    {
+      "name": "mail.sender-mail",
+      "type": "java.lang.String",
+      "sourceType": "edu.citik.configuration.EmailProperties"
+    },
+    {
+      "name": "mail.sender-password",
+      "type": "java.lang.String",
+      "sourceType": "edu.citik.configuration.EmailProperties"
+    },
+    {
+      "name": "mail.sender-username",
+      "type": "java.lang.String",
+      "sourceType": "edu.citik.configuration.EmailProperties"
+    }
+  ],
+  "hints": []
+}

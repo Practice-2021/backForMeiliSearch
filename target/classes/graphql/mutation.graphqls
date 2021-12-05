@@ -1,0 +1,19 @@
+# Изменения работника
+type Mutation {
+
+    # Создание работника
+    createEmployee(employee: EmployeeInput):Employee
+
+    # Обновление работника по ID
+    updateEmployeeById(id: ID, updateCriteria: String, updateValue: String):Int
+
+    # Обновление работника по произвольному критерию
+    updateEmployeeByCriteria(criteria: String, value: String,
+        updateCriteria: String, updateValue: String):Int
+
+    # Удаление работника по ID
+    removeEmployeeById(id: ID):Int
+
+    # Удаление работника по произвольному критерию
+    removeEmployeeByCriteria(criteria: String, value: String):Int
+}

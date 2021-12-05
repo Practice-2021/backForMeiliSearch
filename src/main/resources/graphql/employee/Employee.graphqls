@@ -1,0 +1,54 @@
+# Сущность работника
+type Employee {
+    id: ID!
+    firstName: String
+    lastName: String
+    middleName: String
+    photo: String
+    positions: [String]
+    academicDegree: String
+    department: String
+    email: String
+    pureLink: String
+    timetable: String
+    subjects: [String]
+    educationLevel: String
+    qualification: String
+    speciality: String
+    retraining: [String]
+    experience: Int
+    professionalExperience: Int
+    projects: [String]
+    publications: [String]
+    grants: [String]
+    biography: String
+    requests: [String]
+    departmentLink: String
+}
+
+# Сущность работника для сохранения
+input EmployeeInput {
+    firstName: String
+    lastName: String
+    middleName: String
+    photo: String
+    positions: [String]
+    academicDegree: String
+    department: String
+    email: String
+    pureLink: String
+    timetable: String
+    subjects: [String]
+    educationLevel: String
+    qualification: String
+    speciality: String
+    retraining: [String]
+    experience: Int
+    professionalExperience: Int
+    projects: [String]
+    publications: [String]
+    grants: [String]
+    biography: String
+    requests: [String]
+    departmentLink: String
+}

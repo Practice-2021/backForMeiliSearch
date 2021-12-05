@@ -1,0 +1,179 @@
+2021-12-04 22:48:50.814  INFO edu.citik.EndpointApplication            : Starting EndpointApplication using Java 11.0.12 on avtimofeev-Nitro-AN515-44 with PID 8675 (/home/avtimofeev/IdeaProjects/backendv3/target/classes started by avtimofeev in /home/avtimofeev/IdeaProjects/backendv3)
+2021-12-04 22:48:50.842  INFO edu.citik.EndpointApplication            : The following profiles are active: dev
+2021-12-04 22:48:51.690  INFO .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-12-04 22:48:51.701  INFO .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 MongoDB repository interfaces.
+2021-12-04 22:48:52.081  INFO o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-04 22:48:52.088  INFO o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-04 22:48:52.089  INFO o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-04 22:48:52.089  INFO org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-04 22:48:52.143  INFO o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-04 22:48:52.144  INFO w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1236 ms
+2021-12-04 22:48:52.215  INFO org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-12-04 22:48:52.375  INFO org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:6}] to localhost:27017
+2021-12-04 22:48:52.375  INFO org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:5}] to localhost:27017
+2021-12-04 22:48:52.378  INFO org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=97034684}
+2021-12-04 22:48:53.214  INFO o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2021-12-04 22:48:53.218  WARN ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-12-04 22:48:53.222  INFO o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+2021-12-04 22:48:53.223  INFO o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-12-04 22:48:53.228  WARN o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='61abc6249622f06918ef9182', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:294)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:275)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:170)
+ java.base@11.0.12/java.lang.Thread.run(Thread.java:829)
+2021-12-04 22:48:53.229  WARN o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='61abc6249622f06918ef9182', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.12/java.lang.Thread.sleep(Native Method)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:435)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.access$1300(DefaultServerMonitor.java:57)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:409)
+ java.base@11.0.12/java.lang.Thread.run(Thread.java:829)
+2021-12-04 22:48:53.231  INFO o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+2021-12-04 22:48:53.232  INFO o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+2021-12-04 22:48:53.241  INFO ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-12-04 22:48:53.252 ERROR o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-12-04 22:49:47.833  INFO edu.citik.EndpointApplication            : Starting EndpointApplication using Java 11.0.12 on avtimofeev-Nitro-AN515-44 with PID 8847 (/home/avtimofeev/IdeaProjects/backendv3/target/classes started by avtimofeev in /home/avtimofeev/IdeaProjects/backendv3)
+2021-12-04 22:49:47.839  INFO edu.citik.EndpointApplication            : The following profiles are active: dev
+2021-12-04 22:49:48.592  INFO .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-12-04 22:49:48.608  INFO .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 MongoDB repository interfaces.
+2021-12-04 22:49:49.113  INFO o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-12-04 22:49:49.124  INFO o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8082"]
+2021-12-04 22:49:49.125  INFO o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-04 22:49:49.126  INFO org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-12-04 22:49:49.199  INFO o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-04 22:49:49.200  INFO w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1284 ms
+2021-12-04 22:49:49.298  INFO org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-12-04 22:49:49.364  INFO org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:7}] to localhost:27017
+2021-12-04 22:49:49.364  INFO org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:8}] to localhost:27017
+2021-12-04 22:49:49.366  INFO org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23539035}
+2021-12-04 22:49:50.416  INFO o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8082"]
+2021-12-04 22:49:50.430  INFO o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-12-04 22:49:50.446  INFO edu.citik.EndpointApplication            : Started EndpointApplication in 3.144 seconds (JVM running for 3.921)
+2021-12-04 22:50:12.534  INFO o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-04 22:50:12.535  INFO o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-04 22:50:12.537  INFO o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-04 22:51:05.943  INFO org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3}] to localhost:27017 because there was a socket exception raised by this connection.
+2021-12-04 22:51:06.011  WARN g.e.SimpleDataFetcherExceptionHandler    : Exception while fetching data (/getEmployees) : Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='admin', source='practice', password=<hidden>, mechanismProperties=<hidden>}; nested exception is com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='admin', source='practice', password=<hidden>, mechanismProperties=<hidden>}
+org.springframework.data.mongodb.UncategorizedMongoDbException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='admin', source='practice', password=<hidden>, mechanismProperties=<hidden>}; nested exception is com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='admin', source='practice', password=<hidden>, mechanismProperties=<hidden>}
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:140)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2899)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2824)
+	at org.springframework.data.mongodb.core.MongoTemplate.findAll(MongoTemplate.java:1779)
+	at org.springframework.data.mongodb.core.MongoTemplate.findAll(MongoTemplate.java:1774)
+	at edu.citik.repository.impl.EmployeeRepositoryImpl.findAll(EmployeeRepositoryImpl.java:34)
+	at edu.citik.service.impl.EmployeeService.findAll(EmployeeService.java:44)
+	at edu.citik.resolver.employee.EmployeeQuery.getEmployees(EmployeeQuery.java:17)
+	at edu.citik.resolver.employee.EmployeeQueryMethodAccess.invoke(Unknown Source)
+	at com.coxautodev.graphql.tools.MethodFieldResolverDataFetcher.get(MethodFieldResolver.kt:146)
+	at graphql.execution.ExecutionStrategy.fetchField(ExecutionStrategy.java:258)
+	at graphql.execution.ExecutionStrategy.resolveFieldWithInfo(ExecutionStrategy.java:199)
+	at graphql.execution.AsyncExecutionStrategy.execute(AsyncExecutionStrategy.java:70)
+	at graphql.execution.Execution.executeOperation(Execution.java:158)
+	at graphql.execution.Execution.execute(Execution.java:100)
+	at graphql.GraphQL.execute(GraphQL.java:554)
+	at graphql.GraphQL.parseValidateAndExecute(GraphQL.java:496)
+	at graphql.GraphQL.executeAsync(GraphQL.java:470)
+	at graphql.GraphQL.execute(GraphQL.java:401)
+	at graphql.servlet.GraphQLQueryInvoker.query(GraphQLQueryInvoker.java:92)
+	at graphql.servlet.GraphQLQueryInvoker.query(GraphQLQueryInvoker.java:88)
+	at graphql.servlet.GraphQLQueryInvoker.query(GraphQLQueryInvoker.java:39)
+	at graphql.servlet.AbstractGraphQLHttpServlet.query(AbstractGraphQLHttpServlet.java:265)
+	at graphql.servlet.AbstractGraphQLHttpServlet.lambda$new$2(AbstractGraphQLHttpServlet.java:183)
+	at graphql.servlet.AbstractGraphQLHttpServlet.doRequest(AbstractGraphQLHttpServlet.java:236)
+	at graphql.servlet.AbstractGraphQLHttpServlet.doRequestAsync(AbstractGraphQLHttpServlet.java:227)
+	at graphql.servlet.AbstractGraphQLHttpServlet.doPost(AbstractGraphQLHttpServlet.java:257)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='admin', source='practice', password=<hidden>, mechanismProperties=<hidden>}
+	at com.mongodb.internal.connection.SaslAuthenticator.wrapException(SaslAuthenticator.java:271)
+	at com.mongodb.internal.connection.SaslAuthenticator.getNextSaslResponse(SaslAuthenticator.java:136)
+	at com.mongodb.internal.connection.SaslAuthenticator.access$100(SaslAuthenticator.java:47)
+	at com.mongodb.internal.connection.SaslAuthenticator$1.run(SaslAuthenticator.java:62)
+	at com.mongodb.internal.connection.SaslAuthenticator$1.run(SaslAuthenticator.java:56)
+	at com.mongodb.internal.connection.SaslAuthenticator.doAsSubject(SaslAuthenticator.java:278)
+	at com.mongodb.internal.connection.SaslAuthenticator.authenticate(SaslAuthenticator.java:56)
+	at com.mongodb.internal.connection.DefaultAuthenticator.authenticate(DefaultAuthenticator.java:53)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.authenticate(InternalStreamConnectionInitializer.java:168)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:63)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:144)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.open(UsageTrackingInternalConnection.java:51)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.open(DefaultConnectionPool.java:431)
+	at com.mongodb.internal.connection.DefaultConnectionPool.get(DefaultConnectionPool.java:115)
+	at com.mongodb.internal.connection.DefaultConnectionPool.get(DefaultConnectionPool.java:100)
+	at com.mongodb.internal.connection.DefaultServer.getConnection(DefaultServer.java:96)
+	at com.mongodb.internal.binding.ClusterBinding$ClusterBindingConnectionSource.getConnection(ClusterBinding.java:123)
+	at com.mongodb.client.internal.ClientSessionBinding$SessionBindingConnectionSource.getConnection(ClientSessionBinding.java:135)
+	at com.mongodb.internal.operation.FindOperation$1.call(FindOperation.java:655)
+	at com.mongodb.internal.operation.FindOperation$1.call(FindOperation.java:652)
+	at com.mongodb.internal.operation.OperationHelper.withReadConnectionSource(OperationHelper.java:583)
+	at com.mongodb.internal.operation.FindOperation.execute(FindOperation.java:652)
+	at com.mongodb.internal.operation.FindOperation.execute(FindOperation.java:80)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:170)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:135)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:92)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2807)
+	... 63 common frames omitted
+Caused by: com.mongodb.MongoCommandException: Command failed with error 18 (AuthenticationFailed): 'Authentication failed.' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "Authentication failed.", "code": 18, "codeName": "AuthenticationFailed"}
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:175)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:358)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:279)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:33)
+	at com.mongodb.internal.connection.SaslAuthenticator.sendSaslStart(SaslAuthenticator.java:227)
+	at com.mongodb.internal.connection.SaslAuthenticator.getNextSaslResponse(SaslAuthenticator.java:134)
+	... 88 common frames omitted
+2021-12-04 22:51:06.018 ERROR g.servlet.DefaultGraphQLErrorHandler     : Error executing query (ExceptionWhileDataFetching): Exception while fetching data (/getEmployees) : Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='admin', source='practice', password=<hidden>, mechanismProperties=<hidden>}; nested exception is com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='admin', source='practice', password=<hidden>, mechanismProperties=<hidden>}
