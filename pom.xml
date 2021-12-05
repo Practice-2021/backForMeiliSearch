@@ -30,14 +30,8 @@
         <graphql.version>5.0.2</graphql.version>
         <graphql.tools.version>5.2.4</graphql.tools.version>
 
-        <!-- Liquibase -->
-        <liquibase.version>4.5.0</liquibase.version>
-
         <!-- Mail -->
         <mail.version>1.6.2</mail.version>
-
-        <!-- Mongo -->
-        <mongoDriver.version>3.12.10</mongoDriver.version>
     </properties>
 
 
@@ -57,22 +51,11 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Mongo DB -->
+        <!-- Meilisearch -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>
-
-        <!-- Liquibase -->
-        <dependency>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-core</artifactId>
-            <version>${liquibase.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.liquibase.ext</groupId>
-            <artifactId>liquibase-mongodb</artifactId>
-            <version>${liquibase.version}</version>
+            <groupId>com.meilisearch.sdk</groupId>
+            <artifactId>meilisearch-java</artifactId>
+            <version>0.6.0</version>
         </dependency>
 
         <!-- Graphql -->
