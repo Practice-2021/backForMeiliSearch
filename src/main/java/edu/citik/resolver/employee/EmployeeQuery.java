@@ -18,10 +18,10 @@ public class EmployeeQuery implements GraphQLQueryResolver {
 	}
 
 	public EmployeeDto getEmployeeById(String id) {
-		return employeeService.findById(id);
+		return employeeService.find(id);
 	}
 
 	public EmployeeDto getEmployeeByCriteria(String criteria, String value) {
-		return employeeService.findByCriteria(criteria, value);
+		return employeeService.find(value);
 	}
 }
